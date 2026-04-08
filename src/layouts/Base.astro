@@ -1,0 +1,41 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+const nav = [
+  { href: '/', label: 'about' },
+  { href: '/publications', label: 'publications' },
+  { href: '/blog', label: 'blog' },
+  { href: '/assets/resume.pdf', label: 'cv' },
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <title>{title}</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a class="site-title" href="/">Yuwen Zhang</a>
+      {nav.map(n => <a href={n.href}>{n.label}</a>)}
+    </nav>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <a href="https://github.com/yuwen01">GitHub</a>
+      <a href="https://linkedin.com/in/yuwen01">LinkedIn</a>
+      <a href="https://x.com/yuwen01">X</a>
+      <a href="https://t.me/yuwen_01">Telegram</a>
+    </footer>
+  </div>
+</body>
+</html>
+<style is:global>
+  @import '../styles/global.css';
+</style>

@@ -1,0 +1,39 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<Base title={`${post.data.title} - Yuwen Zhang`}>
+  <h1>{post.data.title}</h1>
+  <p class="post-date">{new Date(post.data.date).toISOString().slice(0, 10)}</p>
+  <div class="post-content">
+    <Content />
+  </div>
+  <div class="comments">
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="yuwen01/yuwen01.github.io.v2"
+      data-repo-id="R_kgDOMVM0eg"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOMVM0es4C6ZnS"
+      data-mapping="pathname"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="light"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </div>
+</Base>

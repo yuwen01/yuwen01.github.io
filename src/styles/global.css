@@ -1,0 +1,139 @@
+:root {
+  --max-width: 700px;
+  --text: #222;
+  --text-muted: #666;
+  --bg: #fff;
+  --link: #0066cc;
+  --border: #ddd;
+  --code-bg: #f5f5f5;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+nav .site-title {
+  font-weight: 600;
+  color: var(--text);
+  margin-right: auto;
+}
+nav a { color: var(--text-muted); font-size: 0.9rem; }
+nav a:hover { color: var(--text); text-decoration: none; }
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+footer a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* About page */
+.about {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.about-text { flex: 1; }
+.about-photo {
+  width: 200px;
+  flex-shrink: 0;
+}
+.about-photo img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Publications */
+.pub {
+  margin-bottom: 1.5rem;
+}
+.pub-title {
+  font-weight: 600;
+}
+.pub-authors {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.pub-authors .me {
+  color: var(--text);
+  font-style: italic;
+}
+.pub-venue {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+.pub-links {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+.pub-links a {
+  margin-right: 0.75rem;
+}
+
+/* Blog */
+.post-list {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+.post-list li {
+  margin-bottom: 1rem;
+}
+.post-date {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+}
+
+/* Post content */
+.post-content {
+  margin-top: 1.5rem;
+}
+.post-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.post-content p {
+  margin-bottom: 1rem;
+}
+.post-content code {
+  background: var(--code-bg);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+h1 { margin-top: 2rem; margin-bottom: 0.5rem; }
+
+@media (max-width: 600px) {
+  .about { flex-direction: column-reverse; }
+  .about-photo { width: 150px; }
+}
