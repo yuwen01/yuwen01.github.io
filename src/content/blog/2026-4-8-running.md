@@ -1,7 +1,6 @@
 ---
 title: "Running"
 date: 2026-04-08
-hidden: true
 ---
 
 I started running in high school, and am still running today. It's been around 10 years. Some of my friends and colleagues who are just getting started ask me questions about running, so I'm compiling my thoughts here.
