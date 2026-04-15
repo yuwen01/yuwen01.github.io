@@ -7,7 +7,7 @@ I started running in high school, and am still running today. It's been around 1
 
 ## My credentials
 
-2:43 at the SF Marathon. 1:13 in the Berkeley half. I will say later why I don't like talking about my times so publicly, but I know some of you will ask, and I also know these results give me more credibility.
+I ran 2:43 at the SF Marathon, and 1:13 in the Berkeley half. I will say later why I don't like talking about my times so publicly, but I know some of you will ask, and I also know these results give me more credibility.
 
 ## The Hump
 
@@ -15,29 +15,15 @@ I started taking running more seriously my sophomore year of high school, in the
 
 What kept me going? First, my parents just wouldn't pick me up from school until an hour and a half after school ended. And second, I definitely felt a little peer pressured to "live up to my potential" by the faster runners. For example, if someone skipped running after school one day, everyone in the group would say "oh. that sucks." in a really disappointed way, and I didn't want them to be saying that about me if I skipped running. 
 
-After I struggled through that season I basically never had any serious motivation or pain problems while running ever again. Even today I feel like I can tap into that guilt, and force myself to go for an easy run on most days. Thanks to my work in high school, even today, I can pick up my mileage pretty quickly after taking a long time off, without getting too sore or feeling like I'm risking injury. Running is a relaxing activity for me. It's meditative. I generally avoid bringing my phone on runs, and I feel clear-headed and satisfied when I'm done.
+After I struggled through that season I basically never had any serious motivation or pain problems while running ever again. Even today I feel like I can tap into that guilt, and force myself to go for an easy run on most days. Thanks to my effort in high school, I pretty easily pick up my mileage after taking a long time off, without getting too sore or feeling like I'm risking injury. Running is a relaxing activity for me. It's meditative. I don't like to  bringing my phone on runs, and I feel clear-headed and satisfied when I'm done. 
 
 Basically, I think for people just starting out, you probably just need some peer pressure for a couple months to get over this "hump", and then running will be fun and relaxing. Strava can help with this! 
 
 ## Strava
 
-Strava was a pretty instrumental part of my initial stretch of peer pressure. I think it worked well for me because I really understood how fast my friends were. During the season, we would go all out and race every two weeks. So if someone was a little faster than me, and I saw them running a couple more weekly miles than me, then I knew that if I ran a little more that would help me catch up to them.
+Strava was a pretty instrumental part of my initial stretch of peer pressure. I think it worked well for me because I really understood how fast my friends were. During the season, we would go all out and race every two weeks. So if someone was a little faster than me, and I saw them running a couple more weekly miles than me, then I knew that if I ran a little more, I might have a chance of catching up to them.
 
-Working adults without a cross country team will probably find it hard to use Strava in this way. A lot of my friends find it discouraging to only see people much faster than them while scrolling on their feed. My only recommendation here is to find people similar speed to you and peer pressure each other, because that's what worked for me. 
-
-## Manners
-
-In general, I think in order to be social with running people you really have to meet people where they're at. Let's say my friend from high school, Colin, was aiming for a 15:30 5k and ended up running 16 flat. 16 flat is much faster than my high school 5k pr. Should I tell him "Hey, don't worry Colin. You are still much faster than me"? I think that would be insensitive. Why would he judge his performance by my standards? I should instead say "Chin up king, you'll get them next time" or something like that. 
-
-So that's why I kind of think it's a little bad mannered to ask someone about their times as an opening conversation topic. Asking for people's times establishes a meaningless hierarchy. Comparing two runners in terms of absolute strength is only useful if you're close, and trying to get some rivalry / competition going.
-
-Instead try these conversation openers.
-
-1. Are you signed up to race anything?
-2. How long have you been running?
-3. What is your weekly mileage? (In my experience, not an amazing indicator of race performance)
-4. Are you in any clubs?
-5. Where do you like to go run?
+Working adults without a cross country team will probably find it hard to use Strava in this way. A lot of my friends find it discouraging to only see people much faster than them while scrolling on their feed. The only recommendation I can offer is to find people similar speed to you and peer pressure each other, because that's what worked for me. 
 
 ## Optimization
 
@@ -50,6 +36,14 @@ So basically here are the reasons I am still running.
 <br>
 
 In San Francisco, people love optimizing everything they can about their training. They stress about their form, buy really fancy shoes, track their heart rate / VO2 max a lot, etc. For me personally, thinking too much about this stuff really detracts from my experience. The main way to get faster is just to run higher mileage without getting injured. If you're not running at least 6 days a week, this applies to you. It doesn't matter if you're wearing really chopped shoes or shorts or whatever. It doesn't matter what your heart rate is. If you can run more and not get injured you're going to get faster. That's it. 
+
+## Compliments
+
+Let's say my friend from high school, Colin, was aiming for a 15:30 5k and ended up running 16 flat. 16 flat is much faster than my high school 5k pr. Should I tell him "Hey, don't worry Colin. You are still much faster than me"? I think that would be insensitive. Colin should judge his performance by his own standards, and reminding him that he's faster than me wouldn't make him feel better about my performance.
+
+I don't like how people treat me differently when they find out about my times. I want to support my friends as they run more and get faster, but oftentimes if I give them compliments they might say "this would have been light work for you, Yuwen". The only reason this may be true is because I have some more natural talent than them, and because I put in some hard work a long time ago in high school. I give my friends compliments because I admire their effort and accomplishments, which has nothing to do with any difference in natural talent.
+
+In general, most of the reason why I run nowadays doesn't have that much to do with racing and performance. So, when I meet people who are into running, I prefer that we don't talk about racing and performance. 
 
 ## Final thoughts
 
