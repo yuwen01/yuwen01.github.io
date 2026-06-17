@@ -53,9 +53,24 @@ So I tried to read this and got hung up in the preliminaties because I'm stupid.
 
 You have two options: Target Only or Rejection sampling. They are supposed to have the same behavior, but not necessarily the same efficiency. 
 
-Target-Only: Greedily choose 
+Target-Only: Greedily choose whatever token the draft model likes the most. Accept it with probability p(c). If you get it wrong, sample from p, excluding the greedy token.
 
+What is the probability we emit a token $t$? Either we guess it right the first time, or we sample from the rejection thingy the second time. Concretely, if we draft token $c$, 
 
+$$ P(\text{get t}) = p(c) 1[t = c] + (1 - p(c)) * p(t) / (1 - p(c)) * 1[t != c] $$
 
+so if t = c then you get p(t), and if t != c then you also get p(t).
+
+Rejection sampling: 
+
+Sample a token $\hat{y} \sim q$, and accept it with probability $min(1, p(\hat{y})/q(\hat{y}))$. 
+
+So if the target likes the first sampled token more than the draft, then it is definitely accepted. Otherwise, it is accepted proportionally to how much less the target likes it than the draft. 
+
+So that means if it's rejected, our sampling needs to again weigh how much more the target likes each token than the drat. Concretely, this means we sample again from $p_{resid}(y) \propto max(0, p(y)-q(y))$. 
+
+That's annoying because now we need to materialize logprobs for the entire draft and the entire target even in the happy path.
+
+That's as far as I got before I had to do real work.
 
 
