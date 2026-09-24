@@ -73,4 +73,54 @@ That's annoying because now we need to materialize logprobs for the entire draft
 
 That's as far as I got before I had to do real work.
 
+## 6/29/2026 -> 07/03/2026
 
+### REINFORCE, PPO, GRPO, and DPO
+
+Summary from [this blog post.](https://huggingface.co/blog/karina-zadorozhny/guide-to-llm-post-training-algorithms)
+
+On policy algorithms will generate their own data. It's like generate -> get reward -> take gradient wrt weights -> hillclimb.
+
+REINFORCE is basically just this ^ as simple as possible. But, the only feedback from the entire trajectory that goes into the gradient descent is just the final reward, which is bad.
+
+PPO tries to evaluate each action individually. Given a current state, a separately trained `critic` predicts the average reward we would probably get from there. And the achieved reward is compared against that baseline, and we hillclimb this difference. The difference is called `advantage`.
+
+The problem with PPO is that the critic model is really expensive. Also you need to inference two different models: the baseline, and the one with the experimental weight updates that you might like, or might not like.
+
+## August 2026
+
+It's been a while. Lots of personal stuff and real work. 
+
+### High level survey of sparse attention
+
+1. Linear Attention
+
+2. Delta Net
+
+3. Mamba
+
+4. Gated Delta Net
+
+5. Sliding Window Attention
+
+### Stuffing facts into MLPs
+
+source: https://hazyresearch.stanford.edu/blog/2025-12-01-mlps-p2
+
+I am generally interested in "intentional" constructions of transformers and mlps, since it seems like a nice principled approach to understanding more efficient architectures or training processes.
+
+### Influence functions
+
+We want to understand the marginal effect of each additional document in pretraining corpus on loss.
+
+First attempt: Hessian.
+
+Consider optimal model $$\theta^* = argmin_{\theta} \frac{1}{N} \sum_{i=1}^{N} L(z_i, \theta)$$
+
+Then analyze $\theta^*({\epsilon})$ where we add a $\epsilon L(z_m, \theta)$ term to better understand the loss associated with $z_m$. This is the "response function".
+
+How to understand the influence of $z_m$? One idea is to take a fist order approximation of the response function at $\epsilon=0$. That will tell us, at that point, if we add more $z_m$ or take away more $z_m$, how loss changes. Given some fixed starting dataset.
+
+Okay so then we should differentiate the response function with respect to $\epsilon$ right? it's under an argmin though. So instead let's define $$F(\theta, \epsilon) = \nabla_{\theta}\mathcal{J}(\theta, D) + \epsilon \nabla_{\theta} \mathcal{L}(z_m, \theta)$$
+
+$F(\theta^*(\epsilon), \epsilon)$ is close to 0 for $\epsilon$ near zero. Since $\theta^*$ minimizes. Now, we are in a great position to use the [Implicit Function Theorem](https://en.wikipedia.org/wiki/Implicit_function_theorem#Statement_of_the_theorem), which lets us get a function $f(\theta) = \epsilon$. where
